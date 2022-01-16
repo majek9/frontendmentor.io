@@ -1,0 +1,152 @@
+:root {
+    --main-background-colour: hsl(217, 54%, 11%);
+    --card-background-colour: hsl(216, 50%, 16%);
+    --line-colour: hsl(215, 32%, 27%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%)
+}
+
+body {
+    background-color: var(--main-background-colour);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    background-color: var(--card-background-colour);
+    position: absolute;
+    width: 330px;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.img-container {
+    position: relative;
+    margin: 23px auto auto;
+}
+
+.equilibrium-logo:hover + .overlay, .overlay:hover {
+    position: absolute;
+    background: url("../images/icon-view.svg") no-repeat center rgba(255, 255, 255, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 285px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.equilibrium-logo {
+    position: relative;
+    width: 285px;
+    height: 285px;
+    margin: 23px auto auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.card h1 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.3em;
+    margin-left: 23px;
+    margin-top: 23px;
+    display: inline-block;
+}
+
+.card a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.card a:hover > h1, .card:active > h1 {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+.card p.description {
+    font-weight: 300;
+    font-size: 1.08em;
+    color: var(--soft-blue);
+    margin-left: 23px;
+    margin-right: 15px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.card p.eth {
+    font-weight: 600;
+    color: var(--white);
+    margin-left: 23px;
+    margin-right: 15px;
+    margin-top: 5px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.card p.time {
+    font-weight: 400;
+    color: var(--soft-blue);
+    margin-left: 80px;
+    margin-right: 15px;
+    margin-top: 5px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.card p.eth::before {
+    content: ' ';
+    background: url('../images/icon-ethereum.svg');
+    height: 18px;
+    width: 12px;
+    position: absolute;
+    transform: translateX(-20px);
+}
+
+.card p.time::before {
+    content: ' ';
+    background: url('../images/icon-clock.svg');
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    transform: translateX(-20px);
+}
+
+hr {
+    border-color: var(--line-colour);
+    width: 85%;
+    margin-top: 0;
+}
+
+.profile img {
+    width: 30px;
+    margin-left: 25px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border: var(--white) solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+.profile p {
+    display: inline-block;
+    color: var(--soft-blue);
+    font-weight: 300;
+    transform: translateY(-8px);
+
+}
+
+.profile a.name {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.profile a:hover.name, .profile a:active.name {
+    color: var(--soft-blue);
+}
