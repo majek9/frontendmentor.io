@@ -16,7 +16,7 @@ body {
     background-color: var(--card-background-colour);
     position: absolute;
     width: 330px;
-    height: fit-content;
+    height: min-content;
     top: 0;
     bottom: 0;
     left: 0;
