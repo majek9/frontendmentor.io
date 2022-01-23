@@ -26,12 +26,12 @@ body {
     max-width: 100%
 }
 
-.img-container {
+.card-img-container {
     position: relative;
     margin: 23px auto auto;
 }
 
-.equilibrium-logo:hover + .overlay, .overlay:hover {
+.card-img-container__logo:hover + .card-img-container__overlay, .card-img-container__overlay:hover {
     position: absolute;
     background: url("../images/icon-view.svg") no-repeat center rgba(255, 255, 255, 0.3);
     top: 0;
@@ -43,7 +43,7 @@ body {
     cursor: pointer;
 }
 
-.equilibrium-logo {
+.card-img-container__logo {
     position: relative;
     width: 285px;
     height: 285px;
@@ -71,7 +71,7 @@ body {
     text-decoration: none;
 }
 
-.card p.description {
+.card .card__description {
     font-weight: 300;
     font-size: 1.08em;
     color: var(--soft-blue);
@@ -81,7 +81,7 @@ body {
     line-height: 1.5;
 }
 
-.card p.eth {
+.card .card__eth {
     font-weight: 600;
     color: var(--white);
     margin-left: 23px;
@@ -91,7 +91,7 @@ body {
     display: inline-block;
 }
 
-.card p.time {
+.card .card__time {
     font-weight: 400;
     color: var(--soft-blue);
     margin-left: 80px;
@@ -101,7 +101,7 @@ body {
     display: inline-block;
 }
 
-.card p.eth::before {
+.card .card__eth::before {
     content: ' ';
     background: url('../images/icon-ethereum.svg');
     height: 18px;
@@ -110,7 +110,7 @@ body {
     transform: translateX(-20px);
 }
 
-.card p.time::before {
+.card .card__time::before {
     content: ' ';
     background: url('../images/icon-clock.svg');
     height: 16px;
@@ -125,7 +125,7 @@ hr {
     margin-top: 0;
 }
 
-.profile img {
+.card__profile img {
     width: 30px;
     margin-left: 25px;
     margin-top: 8px;
@@ -135,7 +135,7 @@ hr {
     border-radius: 30px;
 }
 
-.profile p {
+.card__profile p {
     display: inline-block;
     color: var(--soft-blue);
     font-weight: 300;
@@ -143,11 +143,11 @@ hr {
 
 }
 
-.profile a.name {
+.card__profile .name {
     color: var(--cyan);
     font-weight: 400;
 }
 
-.profile a:hover.name, .profile a:active.name {
+.card__profile a:hover.name, .card__profile a:active.name {
     color: var(--soft-blue);
 }
